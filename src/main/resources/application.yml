@@ -1,0 +1,18 @@
+spring:
+datasource: 
+url: jdbc:<gerenciador do banco de dados>://localhost: <porta> / <nome do banco de dados>/
+username: <usuário do banco de dados>
+password: <senha>
+
+ jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
